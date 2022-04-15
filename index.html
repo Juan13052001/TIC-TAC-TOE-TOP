@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body>
+        <section class="animate__bounceIn">
+            <h1 class="game--title">Tic Tac Toe</h1>
+            <div class="game--container">
+                <div data-cell-index="0" class="cell cell1" id="0"></div>
+                <div data-cell-index="1" class="cell cell2" id="1"></div>
+                <div data-cell-index="2" class="cell cell3" id="2"></div>
+                <div data-cell-index="3" class="cell cell4" id="3"></div>
+                <div data-cell-index="4" class="cell cell5" id="4"></div>
+                <div data-cell-index="5" class="cell cell6" id="5"></div>
+                <div data-cell-index="6" class="cell cell7" id="6"></div>
+                <div data-cell-index="7" class="cell cell8" id="7"></div>
+                <div data-cell-index="8" class="cell cell9" id="8"></div>
+            </div>
+            <h2 class="game--status"></h2>
+            <div class="selectSym animate__bounceInDown">
+                <p>Select symbol:</p>
+                <button onClick="selectSym('X')">X</button>
+                <button onClick="selectSym('O')">O</button>
+            </div>
+            <button class="game--restart animate__bounceIn" type="button">
+                Restart Game
+            </button>
+        </section>
+
+        <footer>&copy; Juan Herrera Vazquez</footer>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+:root {
+    --davys-grey: #50514fff;
+    --orange-red-crayola: #f25f5cff;
+    --naples-yellow: #ffe066ff;
+    --cg-blue: #247ba0ff;
+    --green-sheen: #70c1b3ff;
+    --light-cornflower-blue: #8ecae6ff;
+    --blue-green: #219ebcff;
+    --prussian-blue: #023047ff;
+    --selective-yellow: #ffb703ff;
+    --tangerine: #fb8500ff;
+    --imperial-red: #e63946ff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--naples-yellow);
+}
+
+section {
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2rem;
+}
+
+.game--restart {
+    border: none;
+    background-color: var(--cg-blue);
+    font-size: 25px;
+    color: white;
+    width: 30%;
+    height: 45px;
+    border-radius: 20px;
+    margin: 30px 30%;
+}
+
+.game--container {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 20px auto;
+}
+
+.endgame {
+    display: none;
+    width: 200px;
+    top: 120px;
+    background-color: rgba(205, 133, 63, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.cell1,
+.cell2,
+.cell3,
+.cell4,
+.cell5,
+.cell6 {
+    border-bottom: 2px solid #333;
+}
+
+.cell2,
+.cell5,
+.cell8 {
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+}
+.selectSym {
+    display: none;
+    width: 220px;
+    top: 110px;
+    background-color: var(--orange-red-crayola);
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 2em;
+}
+.selectSym button {
+    margin: 25px 10px 0;
+    font-size: 30px;
+    width: 80px;
+    background-color: var(--light-cornflower-blue);
+    border: none;
+    border-radius: 20px;
+}
